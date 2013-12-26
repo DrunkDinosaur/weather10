@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script type="text/javascript" src="public/getcode.js"></script>  
+</head>
+<body>
+ <form id="data" action="http://localhost:3000/get">
+  <div>Display</div>
+  <input type="radio" name="align" value="Vertical" />Vertical<br/>
+  <input type="radio" name="align" value="Horizontal" checked="checked" />Horizontal<br/>  
+  <div>City</div>
+  <select form="data" name="city" id="city">
+   {{#cities}}
+   <option name="city" value="{{city}}">{{city}}</option> 
+   {{/cities}}
+  </select><br/>  
+  <div>Period (Days)</div>
+  <select form="data" name="days" id="days">
+   <option name="days" value="1">1</option>
+   <option name="days" value="7">7</option>
+   <option name="days" value="10">10</option>
+  </select><br/>  
+ </form>
+  <input type="submit" form="data" value="Show" /><br/>
+ 
+</body>
+</html>

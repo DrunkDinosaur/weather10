@@ -1,0 +1,12 @@
+{
+  "name": "best_weather_widget_ever",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "*",
+    "redis": "*", 
+ 	"request": "*",
+ 	"mustache": "*",
+ 	"jade": "*"
+  },
+  "main": "app.js"
+}
