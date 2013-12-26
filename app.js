@@ -6,7 +6,7 @@ var express = require('express');
 var app = express();
 
 var initializer = require('./initializer')
-initializer.initialize(); //грендайзер, вперёд!
+initializer.initialize(); //пихаем в бд города и хтмл
 
 var options = new Options();
 weatherGrabber.get(); //запрашивает прогноз
